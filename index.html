@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap" rel="stylesheet">
+	<link href="coinflip.css" rel="stylesheet">
+	<link rel="icon" href="assets/heads.png" type="image/x-icon"/>
+    <title>Coin Flip</title>
+</head>
+<body>
+	<div class="bg">
+		<video id="videoBg" autoplay loop muted>
+			<source src="assets/clip.mp4" type="video/mp4">
+		</video>
+		<img id="imgBg" src="assets/bg.png">
+		<div class="toggle-button-div">
+			<button id="toggle-button"><img src="assets/play.png"></button>
+		</div>
+		<div class="container">
+			<div class="coin" id="coin">
+				<div class="heads">
+					<img src="assets/heads.png">
+				</div>
+				<div class="tails">
+					<img src="assets/tails.png">
+				</div>
+			</div>
+			<audio id="coinflipsfx"> 
+				<source src="assets/coinflipsfx.mp3" type="audio/mpeg">
+			</audio>
+			 <div class="score">
+				 <p id="heads-count">Heads: 0</p>
+				 <p id="tails-count">Tails: 0</p>
+			 </div>
+			<div class="buttons">
+				<button id="flip-button">
+					Flip Coin
+				</button>
+				<button id="reset-button">
+					Reset
+				</button>
+			</div>
+		</div>
+		<div class="message">
+			<p>"Flip a coin. If you don't like the outcome, you know what you really wanted."</p>
+		</div>
+	</div>
+	<script src="coinflip.js">
+	</script>
+</body>
+</html>
